@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SKWebHorizon - Digital Agency</title>
+  <meta name="description" content="SKWebHorizon - Professional web development, design, and branding services." />
+  <meta name="author" content="SKWebHorizon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config for dark mode class strategy
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {},
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 bg-white dark:bg-gray-900 flex items-center justify-center z-50">
+    <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-md z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <a href="#" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">SKWebHorizon</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#hero" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a>
+        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
+        <a href="#services" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Services</a>
+        <a href="#portfolio" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Portfolio</a>
+        <a href="#testimonials" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" aria-label="Toggle menu" class="text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode" class="ml-4 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 px-4 pt-2 pb-4 space-y-1">
+      <a href="#hero" class="block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a>
+      <a href="#about" class="block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
+      <a href="#services" class="block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Services</a>
+      <a href="#portfolio" class="block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Portfolio</a>
+      <a href="#testimonials" class="block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Testimonials</a>
+      <a href="#contact" class="block py-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Welcome to SKWebHorizon</h1>
+    <p class="text-lg md:text-2xl mb-8 max-w-3xl">Professional web development, design, and branding services to elevate your business.</p>
+    <a href="#contact" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 transition">Get in Touch</a>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
